@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_padding_and_margin">4dp</dimen>
+    <dimen name="medium_padding_and_margin">12dp</dimen>
+    <dimen name="normal_padding_and_margin">16dp</dimen>
+    <dimen name="large_padding_and_margin">24dp</dimen>
+    <dimen name="extra_large_padding_and_margin">32dp</dimen>
+
+    <dimen name="small_text_size">8sp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
+    <dimen name="normal_text_size">16sp</dimen>
+    <dimen name="normal_to_large_text_size">20sp</dimen>
+    <dimen name="large_text_size">24sp</dimen>
+    <dimen name="very_large_text_size">32sp</dimen>
+
+
+
+    <dimen name="button_radius">20dp</dimen>
+
+</resources>

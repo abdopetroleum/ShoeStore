@@ -1,0 +1,62 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Screens.InstructionFragment.InstructionsFragment">
+    <!--
+    Here I used simple linear layout to arrange elements vertically,
+    and constraint layout with the button to  bring it down like welcome fragment
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryColor"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/extra_large_padding_and_margin"
+            android:layout_marginTop="@dimen/extra_large_padding_and_margin"
+            android:layout_marginBottom="@dimen/normal_padding_and_margin"
+            android:fontFamily="@font/century"
+            android:gravity="center"
+            android:text="@string/instructions"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/very_large_text_size"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/extra_large_padding_and_margin"
+            android:layout_marginTop="@dimen/extra_large_padding_and_margin"
+            android:layout_marginBottom="@dimen/normal_padding_and_margin"
+            android:fontFamily="@font/century"
+            android:gravity="center"
+            android:text="@string/instructions_text"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/very_large_text_size"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/instructions_next_button"
+                style="@style/title_label"
+                android:layout_width="340dp"
+                android:layout_height="70dp"
+                android:text="@string/next"
+                android:textSize="@dimen/very_large_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.87" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</layout>

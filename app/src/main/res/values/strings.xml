@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_back">Welcome</string>
+    <string name="login">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="welcome_text">Abdulrahman Shoe Store Inventory App</string>
+    <string name="next">Next</string>
+    <string name="instructions">Instructions</string>
+    <string name="instructions_text">You can add a new shoe by clicking the add Button in next screen</string>
+    <string name="logout">Log out</string>
+    <string name="add_shoe">Add Shoe Datails</string>
+    <string name="name">Name</string>
+    <string name="Company">Company</string>
+    <string name="size">Shoe Size</string>
+    <string name="description">Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="shoe_item">Shoe Item</string>
+
+</resources>

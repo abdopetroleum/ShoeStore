@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/secondaryColor</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="label_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/large_padding_and_margin</item>
+        <item name="android:layout_marginTop">@dimen/small_padding_and_margin</item>
+        <item name="android:layout_marginRight">@dimen/small_padding_and_margin</item>
+        <item name="android:layout_marginBottom">@dimen/small_padding_and_margin</item>
+        <item name="android:fontFamily">@font/century</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/normal_to_large_text_size</item>
+    </style>
+
+    <style name="edit_text_style" parent="label_style">
+        <item name="android:background">@drawable/white_circular_button</item>
+        <item name="android:fontFamily">@font/century</item>
+        <item name="android:padding">@dimen/medium_padding_and_margin</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textCursorDrawable">@color/secondaryTextColor</item>
+        <item name="android:textSize">@dimen/normal_to_large_text_size</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/white_circular_button</item>
+        <item name="android:fontFamily">@font/century</item>
+        <item name="android:paddingHorizontal">@dimen/medium_padding_and_margin</item>
+        <item name="android:paddingVertical">@dimen/small_padding_and_margin</item>
+        <item name="android:layout_marginHorizontal">@dimen/large_padding_and_margin</item>
+        <item name="android:layout_marginVertical">@dimen/medium_padding_and_margin</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textSize">@dimen/large_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="title_label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">@dimen/extra_large_padding_and_margin</item>
+        <item name="android:background">@color/secondaryColor</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:fontFamily">@font/century</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/small_padding_and_margin</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="shoe_details_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/large_padding_and_margin</item>
+        <item name="android:layout_marginTop">@dimen/large_padding_and_margin</item>
+        <item name="android:layout_marginBottom">@dimen/normal_padding_and_margin</item>
+        <item name="android:fontFamily">@font/century</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/large_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Screens.ShoeDetailFragment.ShoeDetailFragment">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.udacity.shoestore.ShoeViewModel" />
+    </data>
+    <!--
+  Here using Linear layout is simple as I just wanted
+  to arrange Elements vertically and horizontally
+  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryColor"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/shoe_details_style"
+            android:text="@string/add_shoe" />
+
+        <TextView
+            style="@style/label_style"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/edit_text_style"
+            android:inputType="text"
+            android:text="@={viewModel.shoe.name}" />
+
+        <TextView
+            style="@style/label_style"
+            android:text="@string/Company" />
+
+        <EditText
+            android:id="@+id/company"
+            style="@style/edit_text_style"
+            android:inputType="text"
+            android:text="@={viewModel.shoe.company}" />
+
+        <TextView
+            style="@style/label_style"
+            android:text="@string/size" />
+
+        <!--
+            I do not understand so much about the business logic of size but
+            I prefered to use it as a number
+
+        -->
+        <EditText
+            android:id="@+id/shoe_size"
+            style="@style/edit_text_style"
+            android:inputType="number"
+            android:text="@={`` + viewModel.shoe.size}" />
+
+        <TextView
+            style="@style/label_style"
+            android:text="@string/description" />
+
+        <EditText
+            android:id="@+id/describtion"
+            style="@style/edit_text_style"
+            android:inputType="textMultiLine"
+            android:text="@={viewModel.shoe.description}" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/normal_padding_and_margin">
+
+            <Button
+                android:id="@+id/cancel"
+                style="@style/button_style"
+                android:layout_width="0dp"
+                android:layout_marginVertical="@dimen/medium_padding_and_margin"
+                android:text="@string/cancel"
+                app:layout_constraintBaseline_toBaselineOf="@+id/save"
+                app:layout_constraintEnd_toStartOf="@+id/save"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/save"
+                style="@style/button_style"
+                android:layout_width="0dp"
+                android:text="@string/save"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/cancel"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</layout>
