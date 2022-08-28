@@ -43,7 +43,9 @@
         tools:layout="@layout/fragment_listing" >
         <action
             android:id="@+id/action_listingFragment_to_signInFragment"
-            app:destination="@id/signInFragment" />
+            app:destination="@id/signInFragment"
+            app:popUpTo="@id/listingFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_listingFragment_to_shoeDetailFragment"
             app:destination="@id/shoeDetailFragment" />
